@@ -1,205 +1,191 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>关于 | Gridea</title>
-<link rel="shortcut icon" href="https://tml104.github.io/favicon.ico?v=1614507646630">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+    <meta charset="utf-8" >
+
+<title>关于 | TML104</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://tml104.github.io/favicon.ico?v=1614525341339">
 <link rel="stylesheet" href="https://tml104.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="关于 | Gridea - Atom Feed" href="https://tml104.github.io/atom.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
 
-    <meta name="description" content="
-欢迎来到我的小站呀，很高兴遇见你！🤝
-
-🏠 关于本站
-👨‍💻 博主是谁
-⛹ 兴趣爱好
-📬 联系我呀
-..." />
+    <meta name="description" content="写下这些文字的人是“谁”？
+问得好，我也想知道要怎么回答这个问题。先从名字开始吧。
+我来自The Minecraft Lover，这是一个Minecraft小组，一个曾经专攻命令技术，现在制作地图和原版模组等多样化作品的小组。小组的创始人乾..." />
     <meta name="keywords" content="" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://tml104.github.io">
-  <img class="avatar" src="https://tml104.github.io/images/avatar.png?v=1614507646630" alt="">
-  </a>
-  <h1 class="site-title">
-    Gridea
-  </h1>
-  <p class="site-description">
-    温故而知新
-  </p>
-  <div class="menu-container">
-    
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://tml104.github.io">
+        <img src="https://tml104.github.io/images/avatar.png?v=1614525341339" class="site-logo">
+        <h1 class="site-title">TML104</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
       
-        <a href="/" class="menu">
-          首页
-        </a>
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
       
-    
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
       
-        <a href="/archives" class="menu">
-          归档
-        </a>
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
       
-    
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
       
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
+    </div>
   </div>
-  <div class="social-container">
-    
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
       
-    
+        
       
-    
+        
       
-    
+        
       
-    
+        
       
-    
+        
+      
+    </div>
+    <div class="site-description">
+      反复尝试不可耻，放弃练习才丢人。
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://tml104.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
   </div>
 </div>
 
-        <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              关于
-            </h2>
-            <div class="post-info">
-              <span>
-                2019-01-25
-              </span>
-              <span>
-                1 min read
-              </span>
-              
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">关于</h2>
+            <div class="post-date">2019-01-25</div>
+            
+            <div class="post-content" v-pre>
+              <h1 id="写下这些文字的人是谁">写下这些文字的人是“谁”？</h1>
+<p>问得好，我也想知道要怎么回答这个问题。先从名字开始吧。</p>
+<p>我来自The Minecraft Lover，这是一个Minecraft小组，一个曾经专攻命令技术，现在制作地图和原版模组等多样化作品的小组。小组的创始人乾坤一开始把我叫做104，因为我的QQ号码的前3位数就是104，久而久之大家也都这么称呼我了。因此我的名字其实是这个小组的缩写和我QQ号码的前三位的缩写组成的。</p>
+<p>关于这个小组和它的故事就真的太长了，或许有空的话我可以写写文章来仔细诉说一下它的故事。</p>
+<p>那么，抛去姓名，抛去TML104这个不华不实的名字，“我”又是谁呢？一个高中打过OI拿过弱省省一的OIer，现在打ACM却一直在受挫的失败者？还是一个高考明明考出了不错的分数却在为自己的选择而后悔的大学生？</p>
+<p>我可能需要一段时间来想一想怎么回答，抱歉。</p>
+<h1 id="为什么要使用这个自建的blog">为什么要使用这个自建的Blog？</h1>
+<p>严格来说这并不是我“自建”的——我只是在享用他人的劳动成果罢了。这个Blog是我用Gridea生成的静态博客，Gridea足够“傻瓜式”，我觉得挺适合我这种比较怕麻烦的人的。</p>
+<p>我也并不指望有人能看到我写的东西。因此更多地，<strong>这些文字只是写给自己翻阅和参考的。</strong></p>
+<p>我曾在很长一段时间里面认为自己没有必要记录自己做过的事情和学到的东西，但现实和我残废的记忆力很快把我打回了现实：如果我不记下来，有些东西要复习起来可能真的会很困难。</p>
+<p>但，既然要记下来什么的话，只是把文字封存在硬盘里又显得多少有些不便——如果我在使用移动端我甚至没法及时查看这些东西。因此仔细地想来想去，还是使用传统的Blog比较符合我的需求。</p>
+<p>现成的Blog网站有很多，但我并不喜欢在CSDN这种“比较丑”（个人观点）的平台上写东西。在知乎上写文章也曾是我的想法之一，但考虑到知乎上攥写文章的局限性太大（除了严格的内容审查以外，残废的知乎专栏甚至目前都还不能无缝支持Markdown的表格等全部特性），我只能另寻他法。</p>
+<p>当然了，“严格的内容审查”无疑是让我对这些网站敬而远之的主要原因。中国大陆的网络环境在智能手机迅速普及之后发生的巨大的变化使我越来越从生理上厌恶这些占满铜臭味和言论管制以及充斥着“信息垃圾”内容的平台，但要想完全脱离它们，只要我仍然在中国大陆境内学习和生活，那就是根本不现实的。</p>
+<p>我想在这种互联网变革的洪流面前，我能做到的，大概只有保持自我了吧。可是“保持自我”这四个字现在也很难做到。我并不是那种非常坚定的人，或许我很有可能在将来背离我的初心，嘲讽过去的我所写下的愚蠢言论。如果这种情况真的发生了，其实是在我的预料之内的——毕竟我现在回看我初中和小学时做过的那些蠢事大概也就是类似的心情。</p>
+<p>不谈这些了。总之，拥有一个自己的Blog还是很愉快的，就好像自己有了个秘密的天地，一个自己的世界一样，仿佛重新获得了自己第一次玩Minecraft时的那种感动。不用担心被人指点和说三道四。而且最近越发地想要记录一些内心的抒情想法了，这种感觉确实挺新奇的，毕竟我以前可是连写记叙文都要绞尽脑汁地想要怎么才能凑够600字的人。</p>
+<h1 id="todos-for-this-blog">Todos for this Blog</h1>
+<ul>
+<li>改换一个Theme主题</li>
+</ul>
+
             </div>
             
-            <div class="post-content-wrapper">
-              <div class="post-content">
-                <blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
-</blockquote>
-<h2 id="关于本站">🏠 关于本站</h2>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<h2 id="联系我呀">📬 联系我呀</h2>
+            
 
-              </div>
-              <div class="toc-container">
-                <ul class="markdownIt-TOC">
-<li>
-<ul>
-<li><a href="#%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99">🏠 关于本站</a></li>
-<li><a href="#%E5%8D%9A%E4%B8%BB%E6%98%AF%E8%B0%81">👨‍💻 博主是谁</a></li>
-<li><a href="#%E5%85%B4%E8%B6%A3%E7%88%B1%E5%A5%BD">⛹ 兴趣爱好</a></li>
-<li><a href="#%E8%81%94%E7%B3%BB%E6%88%91%E5%91%80">📬 联系我呀</a></li>
-</ul>
-</li>
-</ul>
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
 
-              </div>
-            </div>
-          </article>
+              
+            
+
+          </div>
+
         </div>
-
-        
-
-        
-          
-            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
-<div id="gitalk-container"></div>
-
-<script>
-
-  var gitalk = new Gitalk({
-    clientID: '',
-    clientSecret: '',
-    repo: '',
-    owner: '',
-    admin: [''],
-    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-
-  gitalk.render('gitalk-container')
-
-</script>
-
-          
-
-          
-        
-
-        <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-  <a class="rss" href="https://tml104.github.io/atom.xml" target="_blank">
-    <i class="ri-rss-line"></i> RSS
-  </a>
-</div>
-
       </div>
     </div>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
     <script>
-      hljs.initHighlightingOnLoad()
 
-      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+      var gitalk = new Gitalk({
+        clientID: 'cfd8842c284fe3a4106e',
+        clientSecret: 'a6c08b7296677fb4de7fa0d1dea548bb65bba4da',
+        repo: 'tml104.github.io',
+        owner: 'tml104',
+        admin: ['tml104'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
 
-      // This should probably be throttled.
-      // Especially because it triggers during smooth scrolling.
-      // https://lodash.com/docs/4.17.10#throttle
-      // You could do like...
-      // window.addEventListener("scroll", () => {
-      //    _.throttle(doThatStuff, 100);
-      // });
-      // Only not doing it here to keep this Pen dependency-free.
-
-      window.addEventListener("scroll", event => {
-        let fromTop = window.scrollY;
-
-        mainNavLinks.forEach((link, index) => {
-          let section = document.getElementById(decodeURI(link.hash).substring(1));
-          let nextSection = null
-          if (mainNavLinks[index + 1]) {
-            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-          }
-          if (section.offsetTop <= fromTop) {
-            if (nextSection) {
-              if (nextSection.offsetTop > fromTop) {
-                link.classList.add("current");
-              } else {
-                link.classList.remove("current");    
-              }
-            } else {
-              link.classList.add("current");
-            }
-          } else {
-            link.classList.remove("current");
-          }
-        });
-      });
+      gitalk.render('gitalk-container')
 
     </script>
+  
+
+  
+
+
+
+
   </body>
 </html>
